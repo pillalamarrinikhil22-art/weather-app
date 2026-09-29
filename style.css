@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #74ebd5,
+        #9face6
+    );
+
+    color: #333;
+}
+
+
+.container {
+    width: 90%;
+    max-width: 500px;
+
+    background: white;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+h1 {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+.subtitle {
+    color: #666;
+    margin-bottom: 25px;
+}
+
+
+/* Search */
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.search-box input {
+    flex: 1;
+
+    padding: 13px;
+
+    border: 2px solid #ddd;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+
+.search-box input:focus {
+    border-color: #667eea;
+}
+
+
+.search-box button {
+    padding: 13px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #667eea;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.search-box button:hover {
+    background: #5568d9;
+}
+
+
+/* Error */
+
+#errorMessage {
+    color: #e74c3c;
+
+    margin-bottom: 15px;
+
+    font-weight: bold;
+}
+
+
+/* Weather Card */
+
+.weather-card {
+    background: #f7f9fc;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    margin-top: 10px;
+}
+
+
+.weather-card h2 {
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+}
+
+
+#temperature {
+    font-size: 55px;
+
+    margin: 5px 0;
+}
+
+
+#condition {
+    font-size: 20px;
+
+    text-transform: capitalize;
+
+    color: #555;
+
+    margin-bottom: 25px;
+}
+
+
+/* Weather Details */
+
+.weather-details {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+}
+
+
+.detail {
+    background: white;
+
+    width: 150px;
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.detail span {
+    font-size: 25px;
+}
+
+
+.detail p {
+    color: #666;
+
+    margin: 5px 0;
+}
+
+
+.detail strong {
+    font-size: 18px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 25px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .weather-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .detail {
+        width: 100%;
+    }
+}
